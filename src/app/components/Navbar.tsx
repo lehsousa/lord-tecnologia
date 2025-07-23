@@ -3,12 +3,11 @@
 
 import React, { useState } from 'react';
 
-interface AppProps { }
+import Image from 'next/image';
 
 
 
-
-const Navbar: React.FC<AppProps> = () => {
+const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
   const toggleMobileMenu = () => {
@@ -18,7 +17,7 @@ const Navbar: React.FC<AppProps> = () => {
      <nav className="bg-white shadow-md p-4 sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2 w-30">
-            <img src="/assets/lord-logo.png" alt="logo lord" />
+            <Image src="/assets/lord-logo.png" alt="logo lord" width={100} height={100}/>
           </div>
           <div className="hidden md:flex space-x-6">
             <a href="#home" className="text-gray-600 hover:text-[#023cfa] transition duration-300">Home</a>

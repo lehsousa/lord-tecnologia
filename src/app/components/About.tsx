@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Image from 'next/image';
+
 function About() {
   return (
     <div className="py-16" id="sobre">
@@ -30,9 +32,9 @@ function About() {
               {/* Abstract shapes - simplified with Tailwind classes */}
               <div className="absolute top-0 left-0 w-32 h-32 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
               <div className="absolute bottom-0 right-0 w-48 h-48 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-              <img
+              <Image
                 src="/assets/data center.jpg"
-                alt=""
+                alt="data center" width={7000} height={7000}
                 className="rounded-lg shadow-xl w-full max-w-md h-auto object-cover relative z-10"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;

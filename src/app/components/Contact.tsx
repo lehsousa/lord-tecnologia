@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useState, useRef } from 'react';
+import React, {  useRef } from 'react';
 
-interface AppProps {}
 
-const Contact: React.FC<AppProps> = () => {
+
+const Contact: React.FC = () => {
  
   const nameInputRef = useRef<HTMLInputElement>(null);
   const emailInputRef = useRef<HTMLInputElement>(null);

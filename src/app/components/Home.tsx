@@ -1,11 +1,12 @@
 import React from 'react'
 
+import Image from 'next/image'
+
 function Home() {
   return (
         <section id="home" className="relative isolate overflow-hidden text-white py-20 md:py-32 flex items-center justify-center min-h-screen">
           
-      <img
-        src="/assets/banner.jpg"
+      <Image src="/assets/banner.jpg" alt='imagem do planeta Terra' width={7000} height={7000}
         
         className="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
       />
