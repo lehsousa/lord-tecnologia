@@ -11,13 +11,13 @@ const PrivacyPolicyPage = () => {
             📝 AVISO DE PRIVACIDADE
           </h1>
           <p className="text-center text-gray-500 mb-10">
-            Última atualização: 30 de Julho de 2024
+            Última atualização: 30 de Julho de 2025
           </p>
 
           <div className="space-y-8 text-gray-700 leading-relaxed">
             <section>
               <h2 className="text-2xl font-bold text-gray-800 mb-3">1. Quem somos</h2>
-              <p><strong>Controladora dos dados:</strong> Lord Tecnologia, com sede em [Preencha seu endereço completo aqui].</p>
+              <p><strong>Controladora dos dados:</strong> Lord Tecnologia, com sede em Rua Silva Bueno 2122 sala 34.</p>
               {/* <p><strong>Encarregado de dados (DPO):</strong> [Nome/Função], e-mail para contato: [email do DPO]</p> */}
             </section>
 
@@ -68,7 +68,7 @@ const PrivacyPolicyPage = () => {
 
             <section>
               <h2 className="text-2xl font-bold text-gray-800 mb-3">10. Legislação e foro</h2>
-              <p>Este aviso é regido pela legislação brasileira, incluindo a LGPD (Lei nº 13.709/2018). Para eventuais disputas, fica eleito o foro da Comarca de [Sua Cidade - Ex: São Paulo].</p>
+              <p>Este aviso é regido pela legislação brasileira, incluindo a LGPD (Lei nº 13.709/2018). Para eventuais disputas, fica eleito o foro da Comarca de São Paulo.</p>
             </section>
           </div>
         </div>

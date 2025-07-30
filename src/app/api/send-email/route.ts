@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Todos os campos são obrigatórios.' }, { status: 400 });
     }
 
-    const { data, error } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       // O remetente agora usa o seu domínio verificado.
       from: 'Contato Site <contato@lordtecnologia.com.br>', 
       to: [toEmail], // Enviando para o e-mail de produção.

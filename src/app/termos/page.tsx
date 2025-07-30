@@ -1,7 +1,5 @@
 import React from 'react';
 
-// Este componente será a sua página de Termos de Uso.
-// A rota /termos será criada automaticamente pelo Next.js.
 const TermsOfUsePage = () => {
   return (
     <div className="bg-gray-50">
@@ -17,7 +15,7 @@ const TermsOfUsePage = () => {
           <div className="space-y-8 text-gray-700 leading-relaxed">
             <section>
               <h2 className="text-2xl font-bold text-gray-800 mb-3">1. Objeto</h2>
-              <p>Estes Termos regulamentam o uso do site operado pela Lord Tecnologia, disponível em https://lord-tecnologia., incluindo o uso do formulário de contato.</p>
+              <p>Estes Termos regulamentam o uso do site operado pela Lord Tecnologia, disponível em https://lordtecnologia.com.br , incluindo o uso do formulário de contato.</p>
             </section>
 
             <section>
@@ -37,7 +35,8 @@ const TermsOfUsePage = () => {
 
             <section>
               <h2 className="text-2xl font-bold text-gray-800 mb-3">5. Limitação de responsabilidade</h2>
-              <p>O site é fornecido "como está", sem garantias de qualquer tipo. Na máxima extensão permitida pela lei, não nos responsabilizamos por quaisquer danos diretos ou indiretos decorrentes do uso ou da incapacidade de uso do site.</p>
+              {/* --- CORREÇÃO APLICADA AQUI --- */}
+              <p>O site é fornecido &quot;como está&quot;, sem garantias de qualquer tipo. Na máxima extensão permitida pela lei, não nos responsabilizamos por quaisquer danos diretos ou indiretos decorrentes do uso ou da incapacidade de uso do site.</p>
             </section>
 
             <section>
@@ -47,7 +46,7 @@ const TermsOfUsePage = () => {
 
             <section>
               <h2 className="text-2xl font-bold text-gray-800 mb-3">7. Legislação aplicável</h2>
-              <p>Estes Termos são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da Comarca de [Sua Cidade - Ex: São Paulo] para dirimir quaisquer controvérsias.</p>
+              <p>Estes Termos são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da Comarca de São Paulo para dirimir quaisquer controvérsias.</p>
             </section>
           </div>
         </div>
