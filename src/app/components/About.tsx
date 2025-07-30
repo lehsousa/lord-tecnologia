@@ -1,8 +1,13 @@
 import React from 'react'
-
 import Image from 'next/image';
 
 function About() {
+  // 1. Definimos as mesmas constantes para o link do WhatsApp
+  const numeroWhatsapp = "5511947554873";
+  // Podemos personalizar a mensagem para dar mais contexto ao clique
+  const mensagemPadrao = "Olá! Gostaria de saber mais, e conhecer os serviços da Lord Tecnologia";
+  const whatsappUrl = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensagemPadrao)}`;
+
   return (
     <div className="py-16" id="sobre">
       <section className="md:py-24 overflow-hidden">
@@ -10,7 +15,7 @@ function About() {
           <div className="flex flex-col md:flex-row items-center md:items-center gap-12 ">
             {/* Text Content */}
             <div className="md:w-1/2 text-center md:text-left">
-              <p className="text-sm font-semibold text-[#030030] uppercase mb-2">SOBRE NÓS</p>
+              <p className="text-sm font-semibold text-[#030030] uppercase mb-2">SOBRE A LORD TECNOLOGIA</p>
               <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-gray-800 mb-6">
                 Conectando o Futuro: Soluções Completas em Telecomunicações.
               </h2>
@@ -23,13 +28,20 @@ function About() {
               <p className="text-lg leading-relaxed text-gray-700 mb-8">
                 Com um foco incansável na inovação, estamos sempre explorando novas tecnologias para aprimorar nossos serviços e expandir nossa capacidade. Acreditamos que uma infraestrutura de rede sólida é a base para o sucesso no mundo digital de hoje.
               </p>
-              <a href="#contato" className="bg-[#023cfa] text-white hover:bg-[#030030] px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+              
+              {/* 2. BOTÃO "SAIBA MAIS" ATUALIZADO */}
+              <a 
+                href={whatsappUrl} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#023cfa] text-white hover:bg-[#030030] px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+              >
                 Saiba Mais
               </a>
             </div>
+            
             {/* Image Section */}
             <div className="md:w-1/2 flex justify-center md:justify-end relative">
-              {/* Abstract shapes - simplified with Tailwind classes */}
               <div className="absolute top-0 left-0 w-32 h-32 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
               <div className="absolute bottom-0 right-0 w-48 h-48 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
               <Image
@@ -41,7 +53,6 @@ function About() {
                   target.onerror = null;
                   target.src = 'https://placehold.co/400x300/6366F1/FFFFFF?text=Imagem+Nao+Encontrada';
                 }}
-
               />
             </div>
           </div>
@@ -51,4 +62,4 @@ function About() {
   )
 }
 
-export default About
+export default About;
